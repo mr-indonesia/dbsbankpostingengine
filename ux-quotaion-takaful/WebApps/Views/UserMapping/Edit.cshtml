@@ -1,0 +1,98 @@
+﻿@using Apps.Core.DTOS
+
+<div class="container-fluid">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-user"></i>
+        User Role Application
+    </h1>
+    <!-- widget grid -->
+    <section id="widget-grid" class="">
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-1" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false">
+            <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>Mapping Role Application</h2>
+            </header>
+            <!-- widget div-->
+            <div>
+                <h2>User Mapping For : @ViewBag.UserName </h2>
+                <!-- widget edit box -->
+                <div class="jarviswidget-editbox">
+                    <!-- This area used as dropdown edit box -->
+                </div>
+                <!-- end widget edit box -->
+                <!-- widget content -->
+                <div class="widget-body">
+                    <br />
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <fieldset>
+                            <legend>Company</legend>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Selected Company</label>
+                                        <select id="SelectedCompany" class="form-control selectpicker" name="SelectedCompany" disabled>
+                                            @foreach (BranchDTO dataArea in ViewBag.BranchList)
+                                            {
+                                                if (dataArea.Selected)
+                                                {
+                                                    <option value="@dataArea.BranchCode" selected>@dataArea.BranchCode - @dataArea.BranchName</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@dataArea.BranchCode">@dataArea.BranchCode - @dataArea.BranchName</option>
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Role</legend>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Selected Role</label>
+                                        <select id="SelectedRole" style="width:100%" class="select2" name="SelectedRole" multiple>
+                                            @foreach (RoleDTO role in ViewBag.RoleApplicationList)
+                                            {
+                                                if (role.Selected)
+                                                {
+                                                    <option value="@role.RoleAccessID" selected>@role.RoleAccessName</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@role.RoleAccessID"> @role.RoleAccessName</option>
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="~/UserMapping/Index" class="btn btn-danger">Cancel</a>
+                                    <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- end widget content -->
+            </div>
+            <!-- end widget div -->
+        </div>
+        <!-- end widget -->
+    </section> <!-- end widget grid-->
+</div>
+
+<style>
+    .select2-hidden-accessible {
+        display: none;
+    }
+</style>

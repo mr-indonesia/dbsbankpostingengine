@@ -1,0 +1,121 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model X.PagedList.IPagedList<Apps.Core.DTOS.UserDTO>
+
+<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-user"></i>
+        User Role Application
+    </h1>
+
+    <!--WIDGET GRID-->
+    <section id="widget-grid">
+        <!--User Mapping-->
+        <div class="row">
+            <article class="col-sm-12">
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>Mapping Role Application</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div class="no-padding">
+                        <!--Workflow Button-->
+                        @* <div class="row">
+                            <div class="col-sm-9"></div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                    <input type="search" id="customSearch" class="form-control" onkeyup="FilterTable();">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCreateUserMapping">Create User Mapping</button>
+                                </p>
+                            </div>
+                        </div> *@
+                        <!--End Workflow Button-->
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body">
+                            <table id="datatable_fixed_column" class="datatable table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th data-class="expand">
+                                            @Html.DisplayNameFor(model => model[0].UserCode)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].FrontName)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].LastName)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].RoleApplication)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].Email)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].PositionTitle)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.UserCode)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FrontName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LastName)
+                                            </td>
+                                            <td>
+                                                @Html.Raw(item.RoleApplication)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.PositionTitle)
+                                            </td>
+                                            <td width="100px">
+                                                <form id="@item.UserCode.Replace('.','_')" method="POST" action="/UserMapping/Delete/?id=@item.UserCode">
+                                                    @Html.AntiForgeryToken()
+                                                    @* <button class="glyphicon glyphicon-eye-open btn btn-primary btn-xs" rel="tooltip" data-placement="top" data-original-title="View Data" disabled></button> *@
+                                                    <a href="/UserMapping/Edit/?id=@item.UserCode" class="glyphicon glyphicon-pencil btn btn-success btn-xs" rel="tooltip" data-placement="top" data-original-title="Edit Data"></a>
+                                                    @* <a href="#" class="glyphicon glyphicon-trash btn btn-danger btn-xs" rel="tooltip" data-placement="top" data-original-title="Delete Data" data-toggle="modal" data-target="#confirm-delete" onclick="confirmDelete('@item.UserCode.Replace('.','_')')"></a> *@
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                            <div class="container-fluid">
+                                Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+            </article>
+        </div>
+        <!--END User Mapping-->
+    </section>
+</div>
+
+

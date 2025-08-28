@@ -1,0 +1,15 @@
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\bin\Debug\net8.0\Apps.Core.deps.json
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\bin\Debug\net8.0\Apps.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\bin\Debug\net8.0\Apps.Core.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.csproj.AssemblyReference.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.AssemblyInfoInputs.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.AssemblyInfo.cs
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.csproj.CoreCompileInputs.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.csproj.CopyComplete
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\refint\Apps.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\Apps.Core.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\Apps.Core\obj\Debug\net8.0\ref\Apps.Core.dll

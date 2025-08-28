@@ -1,0 +1,14 @@
+﻿1. Register Hangfire
+2. Setting Cookie Policy in services and app
+3. Setting Setting Avoid AntiForgeyToken and addhsts
+4. Setting AddHealthChecks [Not Configure]
+5. Register ApplicationContext
+6. Register Automapper
+7. Setting Newtonsoft Configuration (Microsoft.AspNetCore.Mvc.NewtonsoftJson)
+8. Configure JwtAuth
+9. Configure AddAuthorization [Not Configure]
+10. Setting CookieAuthenticationDefaults & AddSession
+11. Setting RegisterDependencies [Not Configure]
+12. Swagger Configuration
+13. Setting add list services for diagnostic purposes [Not Configure]
+14. Setting HttpContextAccessor [Check Configuration]

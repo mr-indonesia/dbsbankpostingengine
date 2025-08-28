@@ -1,0 +1,105 @@
+﻿
+<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-desktop"></i>
+        Workflow Detail
+    </h1>
+
+    <!--WIDGET GRID-->
+    <section id="widget-grid">
+        <!--User Mapping-->
+        <div class="row">
+            <article class="col-sm-12">
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>Add Approver</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div>
+                        <!--Workflow Header-->
+                        <div class="row" style="margin-left: 5px;">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <select name="ApproverId" id="ApproverId" class="select2" multiple>
+                                        <option value="1">djoehan</option>
+                                        <option value="2">Naya</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2" style="margin-top: 25px;">
+                                <button type="button" id="btnAdd" class="btn btn-primary">Add</button>
+                                <button type="button" id="btnBack" class="btn btn-default">Back</button>
+                            </div>
+                            <div class="col-md-2 col-sm-2" style="margin-top: 25px;">
+                                @* <input type="checkbox" name="IsDelegate" id="IsDelegate" /> *@
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                @* <label>Period From</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon-calendar glyphicon"></i>
+                                    </span>
+                                    <input type="text" name="PeriodFrom" class="form-control datepicker" />
+                                </div> *@
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                @* <label>Period To</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon-calendar glyphicon"></i>
+                                    </span>
+                                    <input type="text" name="PeriodTo" class="form-control datepicker" />
+                                </div> *@
+                            </div>
+                            
+                        </div>
+                        <br />
+                        <!--End Workflow Header-->
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body no-padding">
+                            <table class="display table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th data-class="expand">
+                                            Username
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            IsDelegate
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            From Date
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            To Date
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                            <div class="container-fluid">
+                                @* Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page })) *@
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+            </article>
+        </div>
+        <!--END User Mapping-->
+    </section>
+</div>

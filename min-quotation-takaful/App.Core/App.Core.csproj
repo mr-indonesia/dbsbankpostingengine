@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="AutoMapper.Data" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Hangfire" Version="1.7.34" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.34" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.34" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess.EFCore\DataAccess.EFCore.csproj" />
+    <ProjectReference Include="..\SharedKernel\SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="nusantaratech">
+      <HintPath>..\..\..\..\..\Libraries\nusantaratech.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

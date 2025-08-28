@@ -1,0 +1,27 @@
+﻿STEP 1 : Create Class Library DataAccess.EFCore
+1.1 Install nuget package dapper (2.1.35)
+1.2 Install nuget package Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.SqlServer, Microsoft.EntityFrameworkCore.Tools  (8.0.7)
+1.3 create folder Interfaces and add interface IRepository
+1.4 create class ApplicationContext
+1.5 create folder Repositories and add class EFRepository and then implements IRepository to EFRepository
+
+STEP 2 : Setting Connection in appsetting.json
+
+STEP 3 : Create Class Library Apps.Core
+3.1 add project reference DataAccess.EFCore to Apps.Core
+3.2 add folder Interfaces, Services, Models, UnitOfWorks
+3.3 add interfaces IUnitOfWork in Interfaces
+3.4 add class UnitOfWork in UnitOfWorks
+3.5 create interface and services each module
+
+STEP 4 : Create WebApps
+4.1 Register ApplicationContext, Register All Services in Startup.cs
+4.2 Install X.PagedList.Mvc.Core
+4.3 Create NotifyHelper, HtmlHelperExt in Helpers Folder (Important)
+
+STEP 5 : Setting Template
+5.1 Create MasterLayout.cshtml
+	-Setting isAuthenticated
+	-include _Header => await Html.RenderPartialAsync("_Header", RenderSection("topright", false));
+	-include left menu _Aside => await Html.RenderPartialAsync("_Aside");
+	-include main content => @RenderBody()

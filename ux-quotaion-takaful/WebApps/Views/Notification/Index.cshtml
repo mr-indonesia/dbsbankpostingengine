@@ -1,0 +1,147 @@
+﻿<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-desktop"></i>
+        Log Monitoring
+    </h1>
+
+    <!--WIDGET GRID-->
+    <section id="widget-grid">
+        <!--User Mapping-->
+        <div class="row">
+            <article class="col-sm-12 col-md-12">
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>Search Filter</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div>
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body">
+                            <div style="margin-top: 10px;">
+                                <div class="col-md-6">
+									<form class="smart-form">
+
+										<fieldset>
+											<div class="row">
+												<section class="col col-6">
+													<label class="input">
+														<i class="icon-prepend fa fa-calendar"></i>
+														<input type="text" name="fname" placeholder="From Date" class="datepicker">
+													</label>
+												</section>
+												<section class="col col-6">
+													<label class="input">
+														<i class="icon-prepend fa fa-calendar"></i>
+														<input type="text" name="lname" placeholder="End Date" class="datepicker">
+													</label>
+												</section>
+											</div>
+											<div class="row">
+												<section class="col col-6">
+													<label class="input">
+														<input type="text" name="fname" placeholder="Status">
+													</label>
+												</section>
+												<section class="col col-6">
+													<label class="input">
+														<input type="text" name="lname" placeholder="Process Id">
+													</label>
+												</section>
+											</div>
+											<div class="row">
+												<section class="col col-9">
+													<label class="select">
+														<select name="country">
+															<option value="0" selected="" disabled="">Monitoring Name</option>
+															<option value="244">Aaland Islands</option>
+															<option value="1">Afghanistan</option>
+														</select> <i></i>
+													</label>
+												</section>
+												<div class="col col-3">
+													<span class="input-group-append">
+														<button type="button" class="btn btn-primary btn-sm">
+															<i class="fa fa-search"></i>
+														</button>
+													</span>													
+												</div>
+											</div>
+										</fieldset>
+									</form>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+
+				<div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-1" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+					
+					<!--WIDGET DIV-->
+					<div>
+						<!--EDIT BOX-->
+						<div class="jarviswidget-editbox">
+						</div>
+						<!--END EDIT BOX-->
+						<!--WIDGET BODY-->
+						<div class="widget-body">
+                            <table class="display table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th data-class="expand">
+                                            Process Id
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            Process Name
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            Start Date Time
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            End Date Time
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            Status
+                                        </th>
+                                        <th>
+                                            
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>4705140000000281</td>
+                                        <td>Sycnc Data Group Product From Stars Apps</td>
+                                        <td>14-05-2025 02:55:24</td>
+                                        <td>14-05-2025 03:15:24</td>
+                                        <td>Success</td>
+                                        <td>
+                                            <button class="glyphicon glyphicon-eye-open btn btn-primary btn-xs" rel="tooltip" data-placement="top" data-original-title="View Data"></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="container-fluid">
+                                @* Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page })) *@
+                            </div>
+						</div>
+						<!--END WIDGET BODY-->
+					</div>
+					<!--END WIDGET DIV-->
+				</div>
+            </article>
+        </div>
+        <!--END User Mapping-->
+    </section>
+</div>

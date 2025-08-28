@@ -1,0 +1,86 @@
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\App.Core.deps.json
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\App.Core.dll
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\App.Core.pdb
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\SharedKernel.dll
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\SourcecodeTakaful\TakafulJobs\App.Core\bin\Debug\net8.0\SharedKernel.pdb
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.csproj.AssemblyReference.cache
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfoInputs.cache
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfo.cs
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.csproj.CoreCompileInputs.cache
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.csproj.Up2Date
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.dll
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\refint\App.Core.dll
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\App.Core.pdb
+D:\SourcecodeTakaful\TakafulJobs\App.Core\obj\Debug\net8.0\ref\App.Core.dll
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.deps.json
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.dll
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.pdb
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\SharedKernel.dll
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\bin\Debug\net8.0\SharedKernel.pdb
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.AssemblyReference.cache
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfoInputs.cache
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfo.cs
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.CoreCompileInputs.cache
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.Up2Date
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.dll
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\refint\App.Core.dll
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.pdb
+D:\SourcecodeTakaful\min-remunservice-takaful\App.Core\obj\Debug\net8.0\ref\App.Core.dll
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.deps.json
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.dll
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.pdb
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\SharedKernel.dll
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\CodeReview\min-remunservice-takaful\App.Core\bin\Debug\net8.0\SharedKernel.pdb
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.AssemblyReference.cache
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfoInputs.cache
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfo.cs
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.CoreCompileInputs.cache
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.Up2Date
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.dll
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\refint\App.Core.dll
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.pdb
+D:\CodeReview\min-remunservice-takaful\App.Core\obj\Debug\net8.0\ref\App.Core.dll
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.deps.json
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.dll
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\App.Core.pdb
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\SharedKernel.dll
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\bin\Debug\net8.0\SharedKernel.pdb
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.AssemblyReference.cache
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfoInputs.cache
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfo.cs
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.CoreCompileInputs.cache
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.Up2Date
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.dll
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\refint\App.Core.dll
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\App.Core.pdb
+D:\CodeReview\NewRemunService\min-remunservice-takaful\App.Core\obj\Debug\net8.0\ref\App.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\App.Core.deps.json
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\App.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\App.Core.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\nusantaratech.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\SharedKernel.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\bin\Debug\net8.0\SharedKernel.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.AssemblyReference.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfoInputs.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfo.cs
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.CoreCompileInputs.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.csproj.CopyComplete
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\refint\App.Core.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\App.Core.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\App.Core\obj\Debug\net8.0\ref\App.Core.dll

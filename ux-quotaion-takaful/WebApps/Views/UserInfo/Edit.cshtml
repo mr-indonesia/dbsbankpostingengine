@@ -1,0 +1,91 @@
+﻿@model Apps.Core.DTOS.UserDTO
+<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-user"></i>
+        <a href="/UserInfo">User Info</a>
+    </h1>
+    <!-- widget grid -->
+    <section id="widget-grid" class="">
+        <div class="jarviswidget" id="wid-id-8" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false">
+            <header>
+                <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                <h2>Edit User Info </h2>
+
+            </header>
+            <!-- widget div-->
+            <div>
+                <!-- widget edit box -->
+                <div class="jarviswidget-editbox">
+                    <!-- This area used as dropdown edit box -->
+                </div>
+                <!-- end widget edit box -->
+                <!-- widget content -->
+                <div class="widget-body no-padding">
+                    <br />
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal container-fluid">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Username</label>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.UserCode, new { htmlAttributes = new { @class = "form-control", @Readonly = "readony" } })
+                                    @Html.ValidationMessageFor(model => model.UserCode, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Front Name</label>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.FrontName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.FrontName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Middle Name</label>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.MiddleName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.MiddleName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Last Name</label>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Company</label>
+                                <div class="col-md-6">
+                                    @Html.DropDownListFor(model => model.BranchCode, ViewBag.companySelected as IEnumerable<SelectListItem>, " --Please select-- ", new { @class = "form-control selectpicker", @data_live_search = "true" })
+                                    @Html.ValidationMessageFor(model => model.BranchCode, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Email</label>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-save"></i> Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- end widget content -->
+            </div>
+            <!-- end widget div -->
+        </div>
+    </section> <!-- end widget grid-->
+</div>

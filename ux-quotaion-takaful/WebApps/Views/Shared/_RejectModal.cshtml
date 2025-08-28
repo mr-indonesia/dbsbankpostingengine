@@ -1,0 +1,46 @@
+﻿@{
+    var route = AppsHttpContext.Current.Request.RouteValues["controller"].ToString().ToUpper();
+    switch (route)
+    {
+        case "COMPANY":
+            ViewBag.formUrl = "/Company/RejectCompanyAgent";
+            // ViewBag.excludeType = "CPR";
+            // ViewBag.excludeRefId = @Model.ProjReqId;
+            // ViewBag.ProjId = @Model.ProjId;
+            break;
+        default:
+            ViewBag.formUrl = "/";
+            break;
+    }
+}
+
+<!-- Modal Delete Confirm-->
+<div class="modal fade" id="ModalRejectCompany" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="RejectTitle">Reject Confirm</h4>
+            </div>
+            <div class="modal-body">
+                <form id="rejectCompanyForm" method="POST" action="@ViewBag.formUrl" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="rejectCode" name="rejectCode" value="0">
+                    <fieldset class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <textarea rows="4" id="rejectremark" name="rejectremark" class="form-control" required></textarea>
+                                <span class="emsg"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <footer class="modal-footer">
+                        <div id="rejectItemMsg" class="alert alert-block alert-danger" style="display:none; text-align: left;"></div>
+                        <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Reject</button>
+                    </footer>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

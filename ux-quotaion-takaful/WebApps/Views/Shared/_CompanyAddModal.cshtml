@@ -1,0 +1,173 @@
+﻿@{
+    var route = AppsHttpContext.Current.Request.RouteValues["controller"].ToString().ToUpper();
+    switch (route)
+    {
+        case "COMPANY":
+            ViewBag.formUrl = "/Company/CreateCompanyAgent";
+            // ViewBag.excludeType = "CPR";
+            // ViewBag.excludeRefId = @Model.ProjReqId;
+            // ViewBag.ProjId = @Model.ProjId;
+            break;
+        default:
+            ViewBag.formUrl = "/";
+            break;
+    }
+}
+
+<!-- Add WorkFlow -->
+<div class="modal fade" id="ModalCreateCompany" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="modalContent">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="modalTitle">Register Company</h4>
+            </div>
+            <div class="modal-body">
+                <form id="companyAgentForm" class="smart-form" method="POST" action="@ViewBag.formUrl" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="Id" name="Id" value="0">
+                    <fieldset>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Nama Perusahaan</label>
+                                <label class="input">
+                                    <input type="text" id="CompanyName" name="CompanyName" placeholder="Nama Perusahaan" required />
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Phone</label>
+                                <label class="input">
+                                    <input type="text" id="Phone" name="Phone" placeholder="Phone" required />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Type</label>
+                                <label class="input">
+                                    @Html.DropDownList("CompanyType", ViewBag.CompanyTypeList as IEnumerable<SelectListItem>, htmlAttributes: new { @class = "form-control selectpicker", @data_live_search = "true" })
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Fax</label>
+                                <label class="input">
+                                    <input type="text" id="Fax" name="Fax" placeholder="Fax" />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Kategori</label>
+                                <label class="input">
+                                    @Html.DropDownList("Category", ViewBag.CompanyCategoryList as IEnumerable<SelectListItem>, htmlAttributes: new { @class = "form-control selectpicker", @data_live_search = "true" })
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Email</label>
+                                <label class="input">
+                                    <input type="text" id="Email" name="Email" placeholder="Email" required />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Line Of Business</label>
+                                <label class="input">
+                                    @Html.DropDownList("LobCode", ViewBag.CompanyLobList as IEnumerable<SelectListItem>, htmlAttributes: new { @class = "form-control selectpicker", @data_live_search = "true" })
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">PIC 1</label>
+                                <label class="input">
+                                    <input type="text" id="PIC1" name="PIC1" placeholder="PIC 1" required />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Alamat 1</label>
+                                <label class="input">
+                                    <input type="text" id="Address1" name="Address1" placeholder="Address 1" required />
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">PIC 2</label>
+                                <label class="input">
+                                    <input type="text" id="PIC2" name="PIC2" placeholder="PIC 2" />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Alamat 2</label>
+                                <label class="input">
+                                    <input type="text" id="Address2" name="Address2" placeholder="Address 2" />
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Jabatan PIC</label>
+                                <label class="input">
+                                    <input type="text" id="PicTitle" name="PicTitle" placeholder="Jabatan PIC" />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Kotamadya</label>
+                                <label class="input">
+                                    <input type="text" id="kodya" name="kodya" placeholder="Kota Madya" />
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Tanggal Registrasi</label>
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-calendar"></i>
+                                    <input type="text" id="RegisterDate" name="RegisterDate" value=@DateTime.Now.ToString("dd/MM/yyyy") data-dateformat="dd/mm/yy" placeholder="Tanggal Registrasi" class="datepicker" disabled="disabled">
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">Propinsi</label>
+                                <label class="input">
+                                    @Html.DropDownList("Propinsi", ViewBag.PropinsiList as IEnumerable<SelectListItem>, htmlAttributes: new { @class = "form-control selectpicker", @data_live_search = "true" })
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Npwp</label>
+                                <label class="input">
+                                    <input type="text" id="Npwp" name="Npwp" placeholder="Nomor NPWP" required />
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">                            
+                            <section class="col col-6">
+                                <label class="label">Kode Pos</label>
+                                <label class="input">
+                                    <input type="text" id="ZipCode" name="ZipCode" placeholder="Kode Pos" required />
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">Status</label>
+                                <label class="input">
+                                    @Html.DropDownList("CoStatus", ViewBag.CompanyStatusList as IEnumerable<SelectListItem>, htmlAttributes: new { @class = "form-control selectpicker", @Disabled = "disabled", @data_live_search = "true" })
+                                </label>
+                            </section>
+                        </div>
+                    </fieldset>
+                    <footer class="modal-footer">
+                        <div id="addItemMsg" class="alert alert-block alert-danger" style="display:none; text-align: left;"></div>
+                        <button id="btnCancelCompany" type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button id="btnSaveCompany" type="submit" name="submit" class="btn btn-primary">
+                            save
+                        </button>
+                    </footer>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Add WorkFlow -->

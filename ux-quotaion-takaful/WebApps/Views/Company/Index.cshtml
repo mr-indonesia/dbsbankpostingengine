@@ -1,0 +1,328 @@
+﻿@{
+    ViewBag.MainRibbon = "Company";
+    ViewBag.RibbonDesc = "Company List";
+}
+
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model CompanySearchViewModel
+
+<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-institution"></i>
+        Company
+    </h1>
+
+    <!--WIDGET GRID-->
+    <section id="widget-grid">
+        <!--User Mapping-->
+        <div class="row">
+            <article class="col-sm-12">
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>Search Filter</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div>
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body">
+                            <div style="margin-top: 10px;">
+                                <div class="col-md-9">
+                                    <form class="smart-form" method="GET" action="@Url.Action("Index", "Company")">
+
+                                        <fieldset>
+                                            <div class="row">
+                                                <section class="col col-6">
+                                                    <label class="label">Kode Perusahaan</label>
+                                                    <label class="input">
+                                                        <input type="text" name="CompanyCode" value="@Model.CompanyCode" placeholder="Kode Perusahaan">
+                                                    </label>
+                                                </section>
+                                                <section class="col col-6">
+                                                    <label class="label">Status</label>
+                                                    <label class="select">
+                                                        <select name="status">
+                                                            @foreach (var item in Model.DdlStatus)
+                                                            {
+                                                                <option value="@item.Value" selected="@(item.Value == Model.Status)">@item.Text</option>
+                                                            }
+                                                        </select> <i></i>
+                                                    </label>
+                                                </section>
+                                            </div>
+                                            <div class="row">
+                                                <section class="col col-6">
+                                                    <label class="label">Nama Perusahaan</label>
+                                                    <label class="input">
+                                                        <input type="text" name="CompanyName" value="@Model.CompanyName" placeholder="Nama Perusahaan">
+                                                    </label>
+                                                </section>
+                                                <section class="col col-6">
+                                                    <label class="label">Kode Agen</label>
+                                                    <label class="input">
+                                                        <input type="text" name="AgentCode" value="@Model.AgentCode" placeholder="Kode Agen">
+                                                    </label>
+                                                </section>
+                                            </div>
+                                            <div class="row">
+                                                <section class="col col-6">
+                                                    <label class="label">Kategori</label>
+                                                    <label class="select">
+                                                        <select name="categorycode">
+                                                            <option value="">-- Pilih Kategori --</option>
+                                                            @foreach (var item in Model.DdlCategory)
+                                                            {
+                                                                <option value="@item.Value" selected="@(item.Value == Model.CategoryCode)">@item.Text</option>
+                                                            }
+                                                        </select> <i></i>
+                                                    </label>
+                                                </section>
+                                                <section class="col col-6">
+                                                    <label class="label">Nama Agen</label>
+                                                    <label class="input">
+                                                        <input type="text" name="AgentName" value="@Model.AgentName" placeholder="Nama Agen">
+                                                    </label>
+                                                </section>
+                                            </div>
+                                            <div class="row">
+                                                <section class="col col-6">
+                                                    <label class="label">Line Of Business</label>
+                                                    <label class="select">
+                                                        <select name="lob">
+                                                            <option value="">-- Pilih LOB --</option>
+                                                            @foreach (var item in Model.DdlLOB)
+                                                            {
+                                                                <option value="@item.Value" selected="@(item.Value == Model.LOB)">@item.Text</option>
+                                                            }
+                                                        </select> <i></i>
+                                                    </label>
+                                                </section>
+                                                <section class="col col-6">
+                                                    @* <label class="label">Sub Channel</label>
+                                                    <label class="input">
+                                                        <select name="Category">
+                                                            <option value="0" selected="" disabled="">-Select-</option>
+                                                        </select> <i></i>
+                                                    </label> *@
+                                                </section>
+                                            </div>
+                                            <div class="row">
+                                                <section class="col col-4">
+                                                    <label class="label">Tanggal Registrasi</label>
+                                                    <label class="input">
+                                                        <i class="icon-prepend fa fa-calendar"></i>
+                                                        <input type="text" name="FromDate" value="@Model.FromDate" data-dateformat="dd/mm/yy" placeholder="From Date" class="datepicker" >
+                                                    </label>
+                                                </section>
+                                                <section class="col col-4">
+                                                    <label class="label">&nbsp;</label>
+                                                    <label class="input">
+                                                        <i class="icon-prepend fa fa-calendar"></i>
+                                                        <input type="text" name="ToDate" value="@Model.ToDate" data-dateformat="dd/mm/yy" placeholder="End Date" class="datepicker">
+                                                    </label>
+                                                </section>
+                                                <section class="col col-3">
+                                                    <label class="label">&nbsp;</label>
+                                                    <span class="input-group-append">
+                                                        <button type="submit" class="btn btn-primary btn-sm">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </section>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                </div>
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-1" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>Data Company</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div>
+                        <!--Workflow Button-->
+                        <div class="row">
+                            <div class="col-sm-9"></div>
+                            <div class="col-sm-3">
+                                @* <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                <input type="search" id="customSearch" class="form-control" onkeyup="FilterTable();">
+                                </div> *@
+                            </div>
+                            <div class="col-sm-2">
+                                <p>
+                                    @* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCreateCompany">
+                                        <span class="glyphicon glyphicon-plus"></span> Register Company
+                                    </button> *@
+                                    <button type="button" class="btn btn-primary" onclick="addCompanyAgent()">
+                                        <span class="glyphicon glyphicon-plus"></span> Register Company
+                                    </button>
+                                    @* <a href="javascript:void(0);" onclick="addRoleAccess()" class="btn btn-primary">Create Role Access</a> *@
+                                </p>
+                            </div>
+                        </div>
+                        <!--End Workflow Button-->
+                        <br />
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body">
+                            <div class="table-responsive">
+                                <table id="datatable_fixed_column" class="datatable table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand">
+                                                @Html.DisplayNameFor(model => model.Companies[0].CompanyCode)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].CompanyName)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].CompanyCategoryDesc)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].PropinsiDesc)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].RegisterDate)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].StatusDesc)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].AgentName)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].SubChannelDistDesc)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model.Companies[0].CompanyLobDescr)
+                                            </th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.Companies)
+                                        {
+
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.CompanyCode)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.CompanyName)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.CompanyCategoryDesc)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.PropinsiDesc)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.RegisterDate)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.StatusDesc)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.AgentName)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.SubChannelDistDesc)
+                                                </td>
+
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.CompanyLobDescr)
+                                                </td>
+
+                                                <td width="100px">
+                                                    <form id="@item.CompanyCode.Replace('.','_')" method="POST" action="/Company/Delete/?id=@item.CompanyCode">
+                                                        @Html.AntiForgeryToken()
+
+                                                        <a href="javascript:void(0);" onclick="ViewCompanyAgent('@item.CompanyCode')" class="glyphicon glyphicon-eye-open btn btn-primary btn-xs" rel="tooltip" data-placement="top" data-original-title="View Data"></a>
+
+                                                        @if(item.StatusCode == "001")
+                                                        {
+                                                            <a href="javascript:void(0);" onclick="editCompanyAgent('@item.CompanyCode')" class="glyphicon glyphicon-pencil btn btn-success btn-xs" rel="tooltip" data-placement="top" data-original-title="Edit Data"></a>
+
+                                                            <a href="#" class="glyphicon glyphicon-trash btn btn-danger btn-xs" rel="tooltip" data-placement="top" data-original-title="Delete Data" data-toggle="modal" data-target="#confirm-delete" onclick="confirmDelete('@item.CompanyCode.Replace('.','_')')"></a>
+                                                        }else{
+                                                            <button class="glyphicon glyphicon-pencil btn btn-success btn-xs" rel="tooltip" data-placement="top" data-original-title="Edit Data" disabled></button>
+
+                                                            <button class="glyphicon glyphicon-trash btn btn-danger btn-xs" rel="tooltip" data-placement="top" data-original-title="Delete Data" disabled></button>
+                                                        }                                                       
+                                                        
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                                <div class="container-fluid">
+                                    Page @(Model.Companies.PageCount < Model.Companies.PageNumber ? 0 : Model.Companies.PageNumber) of @Model.Companies.PageCount
+                                    @* @Html.PagedListPager(Model.Companies, page => Url.Action("Index", new { page })) *@
+                                    @Html.PagedListPager(Model.Companies, page => Url.Action("Index", new
+                                        {
+                                            page = page,
+                                            CompanyCode = Model.CompanyCode,
+                                            Status = Model.Status,
+                                            CompanyName = Model.CompanyName,
+                                            AgentCode = Model.AgentCode,
+                                            CategoryCode = Model.CategoryCode,
+                                            AgentName = Model.AgentName,
+                                            LOB = Model.LOB,
+                                            SubChannel = Model.SubChannel,
+                                            FromDate = Model.FromDate,
+                                            ToDate = Model.ToDate
+                                        }), new PagedListRenderOptions
+                                       {
+                                           LiElementClasses = new string[] { "page-item" },
+                                           PageClasses = new string[] { "page-link" }
+                                       })
+                                </div>
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+            </article>
+        </div>
+        <!--END User Mapping-->
+    </section>
+</div>
+
+@{
+    await Html.RenderPartialAsync("_CompanyAddModal"); /* Request.IsAuthenticated */
+}
+
+@section Scripts {
+    <script src="~/Content/js/registercompany.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Deploy\Takaful\UX</_PublishTargetUrl>
+    <History>True|2025-08-26T23:36:41.3641898Z;True|2025-08-14T09:59:28.2894986+07:00;True|2025-08-13T09:11:56.5670141+07:00;True|2025-08-12T10:33:06.9846195+07:00;True|2025-08-11T03:24:06.0359133+07:00;True|2025-08-11T02:53:51.1505574+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/Content/js/plugin/bootstrap-slider/bootstrap-slider.min.js">
+      <publishTime>08/05/2024 04:36:22</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js">
+      <publishTime>08/05/2024 04:38:01</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/fastclick/fastclick.min.js">
+      <publishTime>08/05/2024 04:38:39</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/flot/jquery.flot.cust.min.js">
+      <publishTime>08/05/2024 04:39:23</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/flot/jquery.flot.resize.min.js">
+      <publishTime>08/05/2024 04:39:53</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/flot/jquery.flot.time.min.js">
+      <publishTime>08/05/2024 04:40:13</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/flot/jquery.flot.tooltip.min.js">
+      <publishTime>08/05/2024 04:40:38</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/fullcalendar/fullcalendar.min.js">
+      <publishTime>08/05/2024 04:41:10</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js">
+      <publishTime>08/05/2024 04:41:46</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/jquery-validate/jquery.validate.min.js">
+      <publishTime>07/08/2025 12:35:04</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/masked-input/jquery.maskedinput.min.js">
+      <publishTime>08/05/2024 04:43:28</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/moment/moment.min.js">
+      <publishTime>07/08/2025 12:54:21</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/msie-fix/jquery.mb.browser.min.js">
+      <publishTime>08/05/2024 04:44:50</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/pace/pace.min.js">
+      <publishTime>08/05/2024 04:45:35</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/select2/select2.min.js">
+      <publishTime>07/08/2025 12:38:07</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/sparkline/jquery.sparkline.min.js">
+      <publishTime>08/05/2024 04:46:42</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js">
+      <publishTime>08/05/2024 04:47:12</publishTime>
+    </File>
+    <File Include="wwwroot/Content/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js">
+      <publishTime>08/05/2024 04:47:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

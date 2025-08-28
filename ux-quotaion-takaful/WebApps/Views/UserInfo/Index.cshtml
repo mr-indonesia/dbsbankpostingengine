@@ -1,0 +1,124 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model X.PagedList.IPagedList<Apps.Core.DTOS.UserDTO>
+
+<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-user"></i>
+        User Info
+    </h1>
+
+    <!--WIDGET GRID-->
+    <section id="widget-grid">
+        <!--User Info-->
+        <div class="row">
+            <article class="col-sm-12">
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>User Info</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div class="no-padding">
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body">
+                            <table id="table_record" class="datatable table table-striped table-bordered">
+                                <caption>
+                                    <div class="row">
+                                        @* <div class="col-sm-8">
+                                            <p style="margin-left: 10px;"><a href="/Userinfo/Create" class="btn btn-primary">Create New </a></p>
+                                        </div> *@
+                                        <div class="col-sm-4">
+                                            @using (Html.BeginForm("Index", "UserInfo", FormMethod.Get))
+                                            {
+                                                <div class="input-group">
+                                                    <input class="form-control" id="searchvalue" name="Search" type="text" placeholder="Search..." value="@ViewBag.Search" >
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default" type="submit">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th data-class="expand">
+                                            @Html.DisplayNameFor(model => model[0].UserCode)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].FrontName)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].MiddleName)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].LastName)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].Email)
+                                        </th>
+                                        <th data-hide="phone,tablet">
+                                            @Html.DisplayNameFor(model => model[0].PositionTitle)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.UserCode)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FrontName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MiddleName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LastName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.PositionTitle)
+                                            </td>
+                                            <td width="100px">
+                                                <form id="@item.UserCode.Replace('.','_')" method="POST" action="/UserInfo/Delete/?id=@item.UserCode">
+                                                    @Html.AntiForgeryToken()
+                                                    @* <button class="glyphicon glyphicon-eye-open btn btn-primary btn-xs" rel="tooltip" data-placement="top" data-original-title="View Data" disabled></button> *@
+                                                    <a href="/UserInfo/Edit/?id=@item.UserCode" class="glyphicon glyphicon-pencil btn btn-success btn-xs" rel="tooltip" data-placement="top" data-original-title="Edit Data"></a>
+                                                    <a href="/UserMapping/Edit/?id=@item.UserCode" class="glyphicon glyphicon-user btn btn-default btn-xs" rel="tooltip" data-placement="top" data-original-title="Add Role Access Apps"></a>
+                                                    @* <a href="#" class="glyphicon glyphicon-trash btn btn-danger btn-xs" rel="tooltip" data-placement="top" data-original-title="Delete Data" data-toggle="modal" data-target="#confirm-delete" onclick="confirmDelete('@item.UserCode.Replace('.','_')')"></a> *@
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                            <div class="container-fluid">
+                                Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, ViewBag.Search }))
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+            </article>
+        </div>
+        <!--END User Info-->
+    </section>
+</div>

@@ -1,0 +1,150 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model X.PagedList.IPagedList<Apps.Core.Models.Migrations.Migration.AgentMigrationViewModel>
+
+<div id="content">
+    <h1 class="page-title txt-color-blueDark">
+        <i class="fa-fw fa fa-desktop"></i>
+        Sync Data
+    </h1>
+
+    <!--WIDGET GRID-->
+    <section id="widget-grid">
+        <!--User Mapping-->
+        <div class="row">
+            <article class="col-sm-12">
+                <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+                    <!--HEADER WIDGET-->
+                    <header>
+                        <span class="widget-icon"><i class="fa fa-table txt-color-blueDark"></i></span>
+                        <h2>Sync Data > Agent Master</h2>
+                    </header>
+                    <!--END HEADER WIDGET-->
+                    <!--WIDGET DIV-->
+                    <div>
+                        <!--Workflow Header-->
+                        <div class="row">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-md-4" style="text-align: right;">
+                                <p>
+                                    <button type="button" class="btn btn-light" rel="tooltip" data-placement="top" data-original-title="Sync Data Agent"><span class="glyphicon glyphicon-refresh"></span></button>
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <!--End Workflow Header-->
+                        <!--EDIT BOX-->
+                        <div class="jarviswidget-editbox">
+                        </div>
+                        <!--END EDIT BOX-->
+                        <!--WIDGET BODY-->
+                        <div class="widget-body">
+                            <div class="table-responsive">
+                                <table class="display table table-striped table-bordered datatable">
+                                    <thead>
+                                        <tr>
+                                            <th data-class="expand">
+                                                @Html.DisplayNameFor(model => model[0].AgentCode)
+                                            </th>
+                                            <th data-class="expand">
+                                                @Html.DisplayNameFor(model => model[0].FULLNAME)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].ChanelCode)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].ChannelDesc)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].SubChannelCode)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].SubChannelDesc)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].Upliner)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].UplinerName)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].DateOfBirth)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].Gender)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].JoinDate)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].Phone)
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                @Html.DisplayNameFor(model => model[0].Email)
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.AgentCode)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.FULLNAME)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.ChanelCode)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.ChannelDesc)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.SubChannelCode)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.SubChannelDesc)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Upliner)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.UplinerName)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Gender)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.JoinDate)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Phone)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Email)
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="container-fluid">
+                                Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, ViewBag.Search }))
+                            </div>
+                        </div>
+                        <!--END WIDGET BODY-->
+                    </div>
+                    <!--END WIDGET DIV-->
+                </div>
+            </article>
+        </div>
+        <!--END User Mapping-->
+    </section>
+</div>

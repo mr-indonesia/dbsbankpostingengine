@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CodeReview\\ux-quotaion-takaful\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|d:\\codereview\\ux-quotaion-takaful\\webapps\\views\\dashboard\\quotationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|solutionrelative:webapps\\views\\dashboard\\quotationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|d:\\codereview\\ux-quotaion-takaful\\webapps\\views\\dashboard\\quotation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|solutionrelative:webapps\\views\\dashboard\\quotation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|d:\\codereview\\ux-quotaion-takaful\\webapps\\views\\shared\\_aside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|solutionrelative:webapps\\views\\shared\\_aside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|d:\\codereview\\ux-quotaion-takaful\\webapps\\views\\shared\\_ribbon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0FFB7C1-8B14-4A34-B66E-1324D8A580BB}|WebApps\\WebApps.csproj|solutionrelative:webapps\\views\\shared\\_ribbon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuotationDetails.cshtml",
+              "DocumentMoniker": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Dashboard\\QuotationDetails.cshtml",
+              "RelativeDocumentMoniker": "WebApps\\Views\\Dashboard\\QuotationDetails.cshtml",
+              "ToolTip": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Dashboard\\QuotationDetails.cshtml",
+              "RelativeToolTip": "WebApps\\Views\\Dashboard\\QuotationDetails.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAWwEwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T17:42:03.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Aside.cshtml",
+              "DocumentMoniker": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Shared\\_Aside.cshtml",
+              "RelativeDocumentMoniker": "WebApps\\Views\\Shared\\_Aside.cshtml",
+              "ToolTip": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Shared\\_Aside.cshtml",
+              "RelativeToolTip": "WebApps\\Views\\Shared\\_Aside.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAE0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T16:44:44.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Ribbon.cshtml",
+              "DocumentMoniker": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Shared\\_Ribbon.cshtml",
+              "RelativeDocumentMoniker": "WebApps\\Views\\Shared\\_Ribbon.cshtml",
+              "ToolTip": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Shared\\_Ribbon.cshtml",
+              "RelativeToolTip": "WebApps\\Views\\Shared\\_Ribbon.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T16:32:50.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Quotation.cshtml",
+              "DocumentMoniker": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Dashboard\\Quotation.cshtml",
+              "RelativeDocumentMoniker": "WebApps\\Views\\Dashboard\\Quotation.cshtml",
+              "ToolTip": "D:\\CodeReview\\ux-quotaion-takaful\\WebApps\\Views\\Dashboard\\Quotation.cshtml",
+              "RelativeToolTip": "WebApps\\Views\\Dashboard\\Quotation.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T15:11:01.699Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1227,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

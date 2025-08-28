@@ -1,0 +1,14 @@
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\bin\Release\net8.0\DataAccess.EFCore.deps.json
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\bin\Release\net8.0\DataAccess.EFCore.runtimeconfig.json
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\bin\Release\net8.0\DataAccess.EFCore.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\bin\Release\net8.0\DataAccess.EFCore.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.csproj.AssemblyReference.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.AssemblyInfoInputs.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.AssemblyInfo.cs
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.csproj.CoreCompileInputs.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\refint\DataAccess.EFCore.dll
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.pdb
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\DataAccess.EFCore.genruntimeconfig.cache
+D:\COMPANY PROJECTS\TAKAFUL\QuotationService\ux-quotaion-takaful\DataAccess.EFCore\obj\Release\net8.0\ref\DataAccess.EFCore.dll

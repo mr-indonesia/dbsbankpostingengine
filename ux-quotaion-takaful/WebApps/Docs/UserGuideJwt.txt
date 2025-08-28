@@ -1,0 +1,6 @@
+﻿1. Create class AuthenticationResult, TokenModel, ServiceConfiguration, JwtSettings di Apps.Core.Models.Authentication
+   -jwt settings merupakan representasi model dari file appsettings.json
+2. Create ServiceConfiguration di appsettings.json
+3. Register ServiceConfiguration di Startup.cs
+4. Create interface IIdentityService dan service IdentityService
+5. Register IIdentityService and IdentityService into startup.cs
