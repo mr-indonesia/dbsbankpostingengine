@@ -46,19 +46,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\johan.koesnandi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\COMPANY PROJECTS\\TAKAFUL\\QuotationService\\min-quotation-takaful\\SharedKernel\\SharedKernel.csproj",
+      "projectUniqueName": "D:\\CodeReview\\QuotationService\\QuotationGit\\min-quotation-takaful\\SharedKernel\\SharedKernel.csproj",
       "projectName": "SharedKernel",
-      "projectPath": "D:\\COMPANY PROJECTS\\TAKAFUL\\QuotationService\\min-quotation-takaful\\SharedKernel\\SharedKernel.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\COMPANY PROJECTS\\TAKAFUL\\QuotationService\\min-quotation-takaful\\SharedKernel\\obj\\",
+      "projectPath": "D:\\CodeReview\\QuotationService\\QuotationGit\\min-quotation-takaful\\SharedKernel\\SharedKernel.csproj",
+      "packagesPath": "C:\\Users\\johan.koesnandi\\.nuget\\packages\\",
+      "outputPath": "D:\\CodeReview\\QuotationService\\QuotationGit\\min-quotation-takaful\\SharedKernel\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\johan.koesnandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,6 +71,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -78,7 +84,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -105,7 +117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

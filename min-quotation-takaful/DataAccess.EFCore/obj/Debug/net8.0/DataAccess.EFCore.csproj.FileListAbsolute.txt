@@ -73,3 +73,19 @@ D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\DataAccess.EF
 D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\refint\DataAccess.EFCore.dll
 D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.pdb
 D:\COMPANY PROJECTS\TAKAFUL\QuotationService\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\ref\DataAccess.EFCore.dll
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\bin\Debug\net8.0\DataAccess.EFCore.deps.json
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\bin\Debug\net8.0\DataAccess.EFCore.dll
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\bin\Debug\net8.0\DataAccess.EFCore.pdb
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\bin\Debug\net8.0\SharedKernel.dll
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\bin\Debug\net8.0\SharedKernel.pdb
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.csproj.AssemblyReference.cache
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.AssemblyInfoInputs.cache
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.AssemblyInfo.cs
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.csproj.CoreCompileInputs.cache
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.sourcelink.json
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAcce.6A56E986.Up2Date
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.dll
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\refint\DataAccess.EFCore.dll
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\DataAccess.EFCore.pdb
+D:\CodeReview\QuotationService\QuotationGit\min-quotation-takaful\DataAccess.EFCore\obj\Debug\net8.0\ref\DataAccess.EFCore.dll

@@ -1103,7 +1103,10 @@
           "System.IdentityModel.Tokens.Jwt": "8.0.0"
         },
         "runtime": {
-          "DataAccess.EFCore.dll": {}
+          "DataAccess.EFCore.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "SharedKernel/1.0.0": {
@@ -1111,7 +1114,10 @@
           "Dapper": "2.1.28"
         },
         "runtime": {
-          "SharedKernel.dll": {}
+          "SharedKernel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "nusantaratech/1.0.0.0": {

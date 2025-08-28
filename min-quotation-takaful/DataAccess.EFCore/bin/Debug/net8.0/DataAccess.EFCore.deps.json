@@ -1055,7 +1055,10 @@
           "Dapper": "2.1.28"
         },
         "runtime": {
-          "SharedKernel.dll": {}
+          "SharedKernel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
